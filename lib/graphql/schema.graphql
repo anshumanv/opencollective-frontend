@@ -1,5 +1,5 @@
 # source: http://localhost:3060/graphql
-# timestamp: Wed Sep 04 2019 09:58:05 GMT+0200 (GMT+02:00)
+# timestamp: Tue Sep 17 2019 02:47:40 GMT-0300 (Brasilia Standard Time)
 
 """
 Application model
@@ -2840,6 +2840,7 @@ input UpdateAttributesInputType {
   title: String
   image: String
   isPrivate: Boolean
+  makePublicOn: IsoDateString
   markdown: String
   html: String
   fromCollective: CollectiveAttributesInputType
@@ -2856,6 +2857,7 @@ input UpdateInputType {
   title: String
   image: String
   isPrivate: Boolean
+  makePublicOn: IsoDateString
   markdown: String
   html: String
   fromCollective: CollectiveAttributesInputType
@@ -2872,6 +2874,7 @@ type UpdateType {
   slug: String
   image: String
   isPrivate: Boolean
+  makePublicOn: IsoDateString
 
   """
   Indicates whether or not the user is allowed to see the content of this update
