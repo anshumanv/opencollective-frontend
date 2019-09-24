@@ -55,7 +55,9 @@ npm run dev
 You can run the tests using `npm test` or more specifically:
 
 - `npm run test:jest` for pages and components
-- `npm run test:e2e` for end-to-end tests using [Cypress](https://www.cypress.io/)
+- `npm run cypress:e2e` for end-to-end tests locally using [Cypress](https://www.cypress.io/)
+
+> `npm run test:e2e` is used for running e2e tests on the CI.
 
 To update:
 
